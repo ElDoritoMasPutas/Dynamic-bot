@@ -1,0 +1,15 @@
+{
+    "1136696659947032716": {
+        "antiRaidEnabled": false,
+        "joinLimit": 5,
+        "messageLimit": 30,
+        "mentionLimit": 5,
+        "accountAgeDays": 200,
+        "autoBan": false,
+        "autoMute": false,
+        "logChannel": "anti-raid-logs",
+        "webhookProtection": true,
+        "botJoinRestriction": true,
+        "whitelist": []
+    }
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "question": "Which of the following are pseudo-legendary Pokémon introduced in Generation IV or later?",
+    "correct_answers": ["Garchomp", "Hydreigon", "Goodra"],
+    "incorrect_answers": ["Dragonite", "Tyranitar", "Salamence"],
+    "hint": "They all have a base stat total of 600 and made their debuts after Gen III."
+  },
+  {
+    "question": "Which of the following Pokémon can undergo Primal Reversion?",
+    "correct_answers": ["Groudon", "Kyogre"],
+    "incorrect_answers": ["Rayquaza", "Dialga", "Palkia"],
+    "hint": "These titanic creatures transform when in possession of a specific orb."
+  },
+  {
+    "question": "Which of the following Pokémon require trading to evolve?",
+    "correct_answers": ["Kadabra", "Machoke", "Graveler", "Haunter"],
+    "incorrect_answers": ["Eevee", "Pikachu", "Charmander"],
+    "hint": "None of these evolutions occur in isolation—they always need a trade."
+  },
+  {
+    "question": "Which of the following are pseudo-legendary Pokémon originally introduced in Generation I–III?",
+    "correct_answers": ["Dragonite", "Tyranitar", "Salamence", "Metagross"],
+    "incorrect_answers": ["Garchomp", "Hydreigon", "Goodra"],
+    "hint": "These early powerhouses set the standard for later pseudo-legendaries."
+  }
+]

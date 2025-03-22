@@ -1,0 +1,26 @@
+{
+  "archived": {
+    "1346952263251267596": {
+      "guildId": "1341300017230774403",
+      "channelId": "1343894768161390623",
+      "messageId": "1346952263251267596",
+      "creatorId": "1020776456734904411",
+      "participants": [
+        "1020776456734904411"
+      ],
+      "embedData": {
+        "title": "test",
+        "description": "test",
+        "creator": "1020776456734904411",
+        "image": null
+      },
+      "numWinners": 1,
+      "duration": 60000,
+      "status": "ended",
+      "endTimestamp": 1741208904641,
+      "winners": [
+        "1020776456734904411"
+      ]
+    }
+  }
+}

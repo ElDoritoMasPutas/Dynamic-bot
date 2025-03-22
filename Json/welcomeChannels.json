@@ -1,0 +1,12 @@
+{
+  "servers": {
+    "1136696659947032716": {
+      "welcomeChannel": "1278825534339678329",
+      "rulesChannel": "1148742950541598820",
+      "generalChannel": "1136696659947032718",
+      "welcomeDescription": "Hello trainer! {user} welcome to {server}! please register in <#1273792554445443133>  if you have questions please DM the bot <@1278780112598335580> and a member of staff will be in contact with you :) \\n \\n if you want to use the sysbots, please visit <#1308974779130314894> and <#1310293057660391486> \\n \\n Enjoy your time in the server! - Ouroboros' Expanse Team 💖",
+      "dmMessage": "Hello trainer! {user} welcome to {server}! please register in <#1273792554445443133>  if you have questions please DM the bot <@1278780112598335580> and a member of staff will be in contact with you :) \\n \\n if you want to use the sysbots, please visit <#1308974779130314894>  and <#1310293057660391486>  \\n \\n Enjoy your time in the server! - Ouroboros' Expanse Team 💖",
+      "bgimage": "cresselia.png"
+    }
+  }
+}

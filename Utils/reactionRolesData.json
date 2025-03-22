@@ -1,0 +1,78 @@
+[
+  {
+    "guildId": "1136696659947032716",
+    "messageId": "1351734631476498474",
+    "pairs": [
+      {
+        "isCustom": true,
+        "emojiName": "PandaFightR",
+        "emojiId": "1165857936430612531",
+        "display": "<a:PandaFightR:1165857936430612531>",
+        "roleId": "1137489909339398204"
+      },
+      {
+        "isCustom": true,
+        "emojiName": "cool_kid",
+        "emojiId": "1142504284701868254",
+        "display": "<:cool_kid:1142504284701868254>",
+        "roleId": "1138909432856727642"
+      },
+      {
+        "isCustom": true,
+        "emojiName": "UmbreonShinyStarEyes",
+        "emojiId": "1165856497436209174",
+        "display": "<:UmbreonShinyStarEyes:1165856497436209174>",
+        "roleId": "1138910499963158588"
+      },
+      {
+        "isCustom": true,
+        "emojiName": "gitgud",
+        "emojiId": "1165856553501458483",
+        "display": "<a:gitgud:1165856553501458483>",
+        "roleId": "1303341352133726248"
+      },
+      {
+        "isCustom": true,
+        "emojiName": "happy_bulb",
+        "emojiId": "1141775607630397510",
+        "display": "<:happy_bulb:1141775607630397510>",
+        "roleId": "1139255267607978125"
+      },
+      {
+        "isCustom": true,
+        "emojiName": "kitty",
+        "emojiId": "1165856518739079218",
+        "display": "<a:kitty:1165856518739079218>",
+        "roleId": "1171166643259445268"
+      },
+      {
+        "isCustom": true,
+        "emojiName": "waffles",
+        "emojiId": "1142504844607893546",
+        "display": "<:waffles:1142504844607893546>",
+        "roleId": "1137372569452941374"
+      },
+      {
+        "isCustom": true,
+        "emojiName": "emoji_109",
+        "emojiId": "1184235460030124122",
+        "display": "<a:emoji_109:1184235460030124122>",
+        "roleId": "1137372616567554089"
+      },
+      {
+        "isCustom": true,
+        "emojiName": "emoji_10",
+        "emojiId": "1138545643334418512",
+        "display": "<:emoji_10:1138545643334418512>",
+        "roleId": "1138894609766957167"
+      },
+      {
+        "isCustom": false,
+        "emojiName": "🔞",
+        "emojiId": null,
+        "display": "🔞",
+        "roleId": "1190807298034106368"
+      }
+    ]
+  }
+]

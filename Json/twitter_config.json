@@ -1,0 +1,15 @@
+{
+  "accounts": [
+    { "username": "SerebiiNet", "priority": 1 },
+    { "username": "Pokemon", "priority": 2 }
+  ],
+  "webhooks": {
+    "SerebiiNet": "https://discord.com/api/webhooks/your-webhook-url-here",
+    "Pokemon": "https://discord.com/api/webhooks/your-webhook-url-here"
+  },
+  "checkInterval": 30,
+  "jitterAmount": 5,
+  "maxRetries": 3,
+  "webhookUsername": "Nurse Joy",
+  "webhookAvatarURL": "https://cdn.discordapp.com/avatars/your-avatar-url-here"
+}

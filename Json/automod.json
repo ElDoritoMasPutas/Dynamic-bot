@@ -1,0 +1,12 @@
+{
+  "1136696659947032716": {
+    "badWords": [],
+    "blacklistedLinks": [],
+    "spamLimit": 5,
+    "blockLinks": true,
+    "maxMentions": 4,
+    "muteDuration": 10,
+    "maxWarnings": 3,
+    "warningImage": ""
+  }
+}
