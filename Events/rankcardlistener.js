@@ -12,11 +12,8 @@ const fs = require('fs');
 const path = require('path');
 const fetch = require('node-fetch');
 
-// Adjust this path if needed:
 const FILE_PATH = path.join(process.cwd(), 'src', 'Json', 'users.json');
 
-// Import your single THEMES from a dedicated themes.js
-// (Adjust the path to wherever you placed themes.js)
 const THEMES = require('../Utils/themes.js');
 
 // Backgrounds array
@@ -75,10 +72,8 @@ async function handleSelectMenuInteraction(interaction) {
   const selectedValue = values[0];
   const userId = interaction.user.id;
 
-  // If user is choosing a background
   if (customId.startsWith('select_bg_')) {
     if (selectedValue === 'custom_url') {
-      // Show the custom background modal
       const modal = new ModalBuilder()
         .setCustomId('custom_background_modal')
         .setTitle('Custom Background');
@@ -92,22 +87,17 @@ async function handleSelectMenuInteraction(interaction) {
       modal.addComponents(firstActionRow);
       return await interaction.showModal(modal);
     } else {
-      // Save the background to JSON
       await updateUserBackground(userId, selectedValue);
       await refreshRankCard(interaction);
-      // Because we've already deferredReply, we just editReply in refreshRankCard
     }
   }
-  // If user is choosing a theme
   else if (customId.startsWith('select_theme_')) {
     const selectedTheme = THEMES[selectedValue];
     if (!selectedTheme) {
       return interaction.followUp({ content: 'Invalid theme selection.', ephemeral: true });
     }
-    // Save the theme
     await updateUserTheme(userId, selectedTheme);
     await refreshRankCard(interaction);
-    // Follow up with confirmation
     await interaction.followUp({
       content: `Theme changed to **${selectedTheme.name}**! Your rank card will now use this theme's colors.`,
       ephemeral: true
@@ -119,11 +109,9 @@ async function handleSelectMenuInteraction(interaction) {
 
 async function handleBackgroundCustomization(interaction) {
   try {
-    // Defer ephemeral reply once
     await interaction.deferReply({ ephemeral: true });
     
     const userId = interaction.user.id;
-    // Build a dropdown for backgrounds
     const backgroundOptions = BACKGROUNDS.map(bg => ({
       label: bg.name,
       value: bg.url,
@@ -155,7 +143,6 @@ async function handleBackgroundCustomization(interaction) {
       .setDescription('Choose a background from the dropdown or add a custom URL.')
       .setFooter({ text: 'The preview will update after you make your selection' });
     
-    // Because we've deferred, we now do editReply
     await interaction.editReply({ embeds: [embed], components: [row, backButton] });
   } catch (error) {
     console.error('Error handling background customization:', error);
@@ -286,8 +273,6 @@ async function showCustomBackgroundModal(interaction) {
 
 async function refreshRankCard(interaction) {
   try {
-    // DO NOT defer again here, because we already did in the calling function
-    // just read data and edit the existing ephemeral reply
     
     const userId = interaction.user.id;
     let usersData = {};
@@ -302,15 +287,13 @@ async function refreshRankCard(interaction) {
     }
     
     const userData = usersData[userId] || { xp: 0, level: 1 };
-    
-    // Fetch rank card from your API
+    //change the IP/port to your express server's credentials
     const apiUrl = `http://51.161.76.212:8104/api/rank-card/${userId}`;
     const response = await fetch(apiUrl);
     if (!response.ok) throw new Error('Failed to fetch rank card');
     
     const buffer = await response.buffer();
     
-    // Create customization buttons
     const row = new ActionRowBuilder().addComponents(
       new ButtonBuilder()
         .setCustomId(`customize_bg_${userId}`)
@@ -362,7 +345,6 @@ async function refreshRankCard(interaction) {
       embed.addFields({ name: 'Current Theme', value: userData.theme.name, inline: true });
     }
     
-    // Now edit the ephemeral reply we already deferred
     await interaction.editReply({
       files: [{ attachment: buffer, name: 'rank-card.png' }],
       embeds: [embed],
@@ -374,7 +356,7 @@ async function refreshRankCard(interaction) {
   }
 }
 
-// -------------------- HELPER: UPDATE JSON --------------------
+//HELPER: UPDATE JSON
 
 async function updateUserBackground(userId, backgroundUrl) {
   let usersData = {};
